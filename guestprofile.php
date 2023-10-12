@@ -1,0 +1,89 @@
+<?php
+include("header.php");
+
+if(isset($_POST['submit'])) {
+    // Sanitize user inputs before using in the query
+    $name = mysqli_real_escape_string($con, $_POST['name']);
+    $emailid = mysqli_real_escape_string($con, $_POST['emailid']);
+    $contactno = mysqli_real_escape_string($con, $_POST['contactno']);
+
+    //Update statement starts here
+    $sql = "UPDATE guest SET name='$name', emailid='$emailid', contactno='$contactno' WHERE guestid='{$_SESSION['guestid']}'";
+    $qsql = mysqli_query($con, $sql);
+    if(mysqli_affected_rows($con) == 1) {
+        echo "<SCRIPT>alert('Guest profile updated successfully..');</SCRIPT>";
+        echo "<script>window.location='guestprofile.php';</script>";
+    } else {
+        echo mysqli_error($con);
+    }
+    //Update statement ends here
+}
+
+if(isset($_SESSION['guestid'])) {
+    $guestid = mysqli_real_escape_string($con, $_SESSION['guestid']);
+    $sqledit = "SELECT * FROM guest WHERE guestid='$guestid'";
+    $qsqledit = mysqli_query($con, $sqledit);
+    $rsedit = mysqli_fetch_array($qsqledit);
+}
+?>
+
+	</div>
+	<!-- //banner -->
+	<!-- page details -->
+	<div class="breadcrumb-agile">
+		<ol class="breadcrumb m-0">
+			<li class="breadcrumb-item">
+				<a href="index.php">Home</a>
+			</li>
+		</ol>
+	</div>
+	<!-- //page details -->
+
+	<!-- contact -->
+	<section class="contact-wthree py-5" id="contact">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title text-center mb-sm-5 mb-4">
+				<h3 class="title-w3 text-bl text-center font-weight-bold">Guest</h3>
+				<div class="arrw">
+					<i class="fa fa-building-o" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="row pt-xl-4">
+				<div class="col-lg-8 offset-2">
+					<div class="contact-form-wthreelayouts">
+<form action="" method="post" class="register-wthree">
+	
+	<div class="form-group">
+		<label>
+			Name
+		</label>
+		<input class="form-control"  type="text" name="name"value="<?php echo $rsedit['name'];?>">
+	</div>
+	<div class="form-group">
+		<label>
+			Email ID
+		</label>
+		<input class="form-control" type="email" placeholder="Email ID" name="emailid" value="<?php echo $rsedit['emailid'];?>">
+	</div>
+	<div class="form-group">
+		<label>
+			Contact Number
+		</label>
+		<input class="form-control" type="text" name="contactno"value="<?php echo $rsedit['contactno'];?>">
+	</div>
+
+	<div class="form-group mt-4 mb-0">
+		<button type="submit" name="submit" class="btn btn-w3layouts w-100">Submit</button>
+	</div>
+</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //contact -->
+
+	<?php
+	include("footer.php");
+	?>
+	

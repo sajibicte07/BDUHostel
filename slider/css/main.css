@@ -1,0 +1,175 @@
+
+/**
+ * #COMPONENTS
+ */
+/* Page Head */
+
+
+
+.top_info_block .contact-detail {
+    padding-top: 20px;
+    width: 100%;
+    float: left;
+}
+
+
+
+.top_info_block {
+  overflow: hidden;
+}
+
+
+
+@media (min-width: 768px) {
+  .top_info_block .logo_box:before {
+    content: '';
+    background: #8ac760;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0.9375rem;
+    width: 1000px;
+    transform: skew(20deg);
+    z-index: 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .top_info_block .logo_box {
+   padding: 15px;
+  }
+}
+
+.top_info_block .logo_box img {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+}
+
+
+
+.top_info_block .site-info {
+  background: #fff;
+}
+
+
+
+.top_info_block .site-info > .container > .row {
+  font-size: 0;
+}
+
+.top_info_block .site-info > .container > .row > * {
+  font-size: 13px;
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
+
+.top_info_block .contact-detail h3 {
+  font-size: 1.125rem;
+  color: #111;
+}
+
+
+
+.top_info_block .contact-detail i {
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 15px;
+  color: #8ac760;
+}
+
+.top_info_block .contact-detail span {
+  font-weight: 600;
+  color: #777;
+}
+
+
+
+/* Site Navs */
+.top_info_block .menu-item, .page_item {
+  display: inline-block;
+}
+
+.top_info_block .top-menu-bar {
+  position: relative;
+}
+
+
+.top_info_block .top-menu-bar a {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #777777;
+}
+
+.top_info_block .top-menu-bar a:hover, .top_info_block .top-menu-bar a:active, .top_info_block  .top-menu-bar a:focus {
+  color: #232331;
+}
+
+
+
+.top_info_block .top-menu-bar:before {
+  content: '';
+  position: absolute;
+  left: -900px;
+  right: -900px;
+  height: 1px;
+  bottom: 0;
+  background-color: #dddddd;
+}
+
+
+.top_info_block .top-menu-bar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.top_info_block .top-menu-bar .social-menu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: block;
+  border-left: 1px solid #DDDDDD;
+  border-right: 1px solid #DDDDDD;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  transform: skew(20deg);
+}
+
+
+.top_info_block .social-menu {
+    text-align: right;
+	padding: 0px 100px;
+	width: 100%;
+	
+}
+
+
+.top_info_block .social-menu .menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.top_info_block .social-menu .menu li:first-child {
+  margin-left: 0;
+}
+
+.top_info_block .social-menu .menu li:before {
+  display: none;
+}
+
+
+.top_info_block .social-menu .menu li a {
+  line-height: 50px;
+  z-index: 1;
+  position: relative;
+}
+

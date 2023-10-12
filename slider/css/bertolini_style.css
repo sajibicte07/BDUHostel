@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+#bertolini_head
+{
+    background: url(../images/bertolini/bertolini_head.jpg);
+   	background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 360px;
+    z-index: 1;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+	float: left;
+}
+
+.title_head_berto
+{
+	float:left;
+	width:100%;
+	text-align:center;
+	padding:60px 0px;
+}
+
+.title_head_berto h2
+{
+    line-height: 1.5;
+    font-weight: 700;
+    font-style: normal;
+    color: #01baf3;
+    font-size: 44px;
+	font-family: 'Lato', sans-serif;
+	display: inline-block;
+	background-color: rgba(44, 44, 44, 0.4);
+	padding: 0px 10px;
+}
+
+
+.bertolini_about
+{
+    float: left;
+    width: 100%;
+    padding: 0px 0px 40px;
+}
+
+
+.berto_info
+{
+    float: left;
+    width: 100%;
+    padding: 20px 0px;
+	background-color: #01baf3;
+}
+
+.berto_info h2
+{
+    line-height: 1.5;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    border-left: 5px solid #000;
+    padding-bottom: 0;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.berto_info p
+{
+	line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1f1f1f;
+    font-size: 14px;
+	text-align:justify;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.berto_prod
+{
+    float: left;
+    width: 100%;
+    padding: 20px 0px;
+	
+}
+
+.berto_prod .title_prods
+{
+    float: left;
+    width: 100%;
+    padding: 20px 0px;
+}
+.berto_prod .title_prods h2
+{
+    line-height: 1.5;
+    font-weight: 700;
+    font-style: normal;
+    color: #006196;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    border-left: 5px solid #01baf3;
+    padding-bottom: 0;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.berto_prod_block
+{
+    float: left;
+    width: 100%;
+}
+
+.berto_prod_block .berto_box
+{
+    float: left;
+    width: 100%;
+	padding: 20px 60px;
+
+}
+
+
+.img_berto
+{
+    border: 1px solid #006196;
+	padding: 0;
+}
+.berto_box .img_berto h2
+{
+    color: #313338;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    text-align: center;
+	border-top: 1px solid #006196;
+}
+
+
+.list_berto_prod
+{
+	line-height: 28px;
+    color: #656565;
+    font-size: 14px;
+}
+.list_berto_prod h3
+{
+    border: 3px solid #01baf3;
+    color: #006196;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.inner_info_berto
+{
+    border-bottom: 2px solid #d7d7d4;
+    color: #444444;
+    font-size: 14px;
+    padding: 8px 0px;
+    float: left;
+    width: 100%;
+}
+
+.list_inner_pro
+{
+    float: left;
+    width: 100%;
+}
+.inner_info_berto li 
+{
+    float: left;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.inner_info_berto li:last-child {
+    text-align: right;
+}
+
+.berto_box:hover .list_berto_prod h3
+{
+	background-color:#01baf3;
+	border: 3px solid #006196;
+}
+
+.berto_box:hover .list_inner_pro
+{
+	border:1px solid #006196;
+}
+
+.berto_box:hover  .img_berto
+{
+	border:1px solid #006196;
+}
+
+.berto_box:hover .img_berto h2
+{
+	background-color:#006196;
+	color:#fff;
+}
+
+.berto_box:hover .list_berto_prod h3,
+.berto_box:hover .list_inner_pro,
+.list_berto_prod h3,
+.list_inner_pro,
+.berto_box:hover .img_berto,
+.berto_box:hover .img_berto h2
+{
+	 transition: all 1.3s ease;
+    -webkit-transition: all 1.3s ease;
+    -moz-transition: all 1.3s ease;
+    -o-transition: all 1.3s ease;
+}
+
+
+
+@media(max-width:767px ){
+	
+.berto_prod_block .berto_box
+{
+	padding: 20px 10px;
+
+}
+
+}

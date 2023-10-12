@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+ul{
+    margin-bottom: 10px;
+    margin-top: 0;
+    list-style-type: square;
+}
+ol{
+    margin-bottom: 10px;
+    margin-top: 0;
+
+}
+ul li,
+ol li{
+    color: #000000;
+    display: block;
+    font-family:'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+
+/**
+*  Slider
+* -----------------------------------------------------------------------------
+*/
+.tp-caption.slider-text2 h2 {
+	font-size:36px;
+	line-height:42px;
+	font-weight:700;
+	color:#fff ;
+	text-decoration:none;
+	background-color:transparent;
+	padding:0px 40px;
+	border-width:0px;
+	border-color:rgb(255, 255, 255);
+	border-style:none;
+	letter-spacing:3px;
+	text-transform:uppercase;
+	}
+
+.slider-text2 .blue_slider
+{
+	color:#117CE0 ;
+	letter-spacing:2px;
+	text-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+
+}	
+	
+	
+
+.tp-caption.slider-text2 strong
+{
+	font-weight:700;
+	font-size:28px;
+	color:#1E7096 ;
+	letter-spacing:2px;
+
+}
+
+body .tp-caption.title-slider-blod {
+    color: #fff;
+    display: inline-block;
+    font-family:'Open Sans', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    line-height: 78px;
+}
+
+
+
+.tp-caption.slider-text1 {
+	font-size:38px;
+	line-height:60px;
+	font-weight:700;
+	color:#ff6b57;
+	text-decoration:none;
+	background-color:transparent;
+	padding:0px 40px;
+	border-width:0px;
+	border-color:rgb(255, 255, 255);
+	border-style:none;
+	text-transform:uppercase;
+}
+.tp-caption.slider-text1 strong {
+	font-size:68px;
+	color:#fff;
+}
+
+
+
+
+
+.tp-caption.finewide_medium_white {
+  color: #ff6b57;
+  text-shadow: none;
+  font-size: 46px;
+  line-height: 48px;
+  font-weight: 900;
+  font-family:'Open Sans', sans-serif;
+  background-color: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 0px;
+  border-color: transparent;
+  border-style: none;
+  text-align: left;
+  letter-spacing: 3px;
+  background-color: rgba(255, 255, 255, 0.64);
+display: inline;
+padding: 8px 12px;
+}
+.tp-caption.finewide_medium_yellow {
+  color: #fff;
+  text-shadow: none;
+  font-size: 46px;
+  line-height:60px;
+  font-weight: 900;
+  font-family:'Open Sans', sans-serif;
+  background-color: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 0px;
+  border-color: transparent;
+  border-style: none;
+  text-align: left;
+  letter-spacing: 5px;
+    background-color: rgba(255, 255, 255, 0.64);
+display: inline;
+padding: 6px 16px !important;
+  
+}
+
+
+.tp-caption.finewide_medium_white span.thin-skin {
+  font-weight: 700 !important;
+}
+.tp-caption.finewide_medium_white.center-align {
+  text-align: center;
+}
+
+
+
+
+
+
+
+.tp-caption.medium_thin_grey {
+  font-size: 36px;
+  color: #222222;
+  font-family:'Open Sans', sans-serif;
+  color: #fff;
+}
+.tp-caption.medium_thin_grey span {
+  color: #ffba00;
+}
+.tp-caption.medium_thin_grey.center-align {
+  text-align: center;
+}
+
+
+
+.tp-caption.rhythm-light-white,.rhythm-light-white{text-transform:uppercase;color:#ffffff;font-size:30px;text-shadow:none;letter-spacing:4px;text-decoration:none;font-weight:700 !important;border-width:0px;border-color:rgb(0,0,0); background-color: rgba(255, 255, 255, 0.64);
+display: inline;
+padding: 8px 12px;border-style:none}
+
+
+.tp-caption.rhythm-light-white strong
+{
+	font-size:48px;
+	color:#1E7096;
+}
+
+
+.tp-caption.rhythm-xlarge-white,.rhythm-xlarge-white{text-transform:uppercase;color:#ff6b57;text-shadow:none;text-decoration:none;font-size:36px;line-height:30px;letter-spacing:4px;background-color:transparent;font-weight:700 !important;font-family: 'Open Sans', sans-serif;border-width:0px;border-color:rgb(0,0,0);border-style:none}	
+
+
+body .tp-leftarrow.default{
+    background-image: url(../images/pre-slider.png);
+}
+body .tp-leftarrow:hover{
+    background-image: url(../images/pre-slider-hover.png);
+}
+body .tp-leftarrow:hover,
+body .tp-rightarrow:hover {
+    background-position: inherit;
+}
+body .tp-rightarrow.default{
+    background-image: url(../images/next-slider.png);
+}
+body .tp-rightarrow:hover{
+    background-image: url(../images/next-slider-hover.png);
+}
+.bk-responsive-slide{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
